@@ -15,7 +15,7 @@ let j = 0;
 // execute once when the program begins
 // The array is filled with random values in setup() function.
 function setup() {
-  createCanvas(720, 400);
+  createCanvas(720, 720);
   for(let i = 0;i<width/8;i++){
     values.push(random(height));
   }
@@ -62,7 +62,7 @@ function bubbleSort() {
 function simulateSorting(){
   for(let i = 0;i<values.length;i++){
     stroke(100, 143, 143);
-     fill(50);
+     fill(100, 200, 30);
      rect(i*8 , height, 8, -values[i],20);
    }
 }
